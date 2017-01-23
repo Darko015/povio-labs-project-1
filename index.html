@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <script src="js/map.js"></script>
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+
+        <div class="base">
+            <div class="nav">
+                <ul>
+                    <li><img class="logo" src="img/logo.png" /></li>
+                    <li class="first">
+                        <img class="icon-explore-active" src="img/icon-explore-active.png" />
+                        <div class="explore">Explore</div>
+                    </li>
+                    <li>
+                        <img class="icon-trips" src="img/icon-trips.png" />
+                        <div class="trips">Trips</div>
+                    </li>
+                    <li>
+                        <div class="oval"><div class="number">2</div></div>
+                        <div class="messages">Messages</div>
+                    </li>
+
+                    <li class="user">
+                      <div class="john">John</div>
+                      <img class="dot-blue-expanded" src="img/John.png"/>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="rectangle-4">
+          <div class="gradient">
+            <img class="background-image" src="img/background-image.png"/>
+            <div class="dot-blue-copy-3">
+              <div class="fill-1"><img src="img/x.png"/></div>
+            </div>
+          </div>
+          <div class="base connect" id="button_connect">Connect</div>
+          <div class="base message" id="button_message">Message</div>
+
+          <div class="dot-blue-expanded"><img src="img/Michael.png"/></div>
+          <div class="michael-29">Michael, 29</div>
+          <div class="san-francisco-calif">San Francisco, California</div>
+
+          <div class="icon-house"><img src="img/icon-house.png"/></div>
+          <div class="icon-handshake"><img src="img/icon-handshake.png"/></div>
+          <div class="icon-medical"><img src="img/icon-medical.png"/></div>
+
+          <div class="i-am-an-adventurous">
+            I am an adventurous wanderer who likes meeting new people and getting better to know about interesting cultures.
+          </div>
+
+          <div class="mytopic3">
+            MY TOP 3 RECOMMENDATIONS
+          </div>
+
+          <div class="recommendation">
+            <div class="icon-dine"><img src="img/icon-dine.png"/></div>
+            <div class="little-delhi-india">
+              Little Delhi - Indian Restaurant
+            </div>
+            <div class="icon-save1"><img src="img/icon-save.png"/></div>
+          </div>
+
+          <div class="recommendation">
+            <div class="icon-drink"><img src="img/icon-drink.png"/></div>
+            <div class="oceanic-view-rooftop">
+              Oceanic View Rooftop
+            </div>
+            <div class="combined-shape">
+              <div class="add-to-your-trip">Add to your trip</div>
+              <div class="trinagle"></div>
+            </div>
+            <div class="icon-save2"><img src="img/icon-save.png"/></div>
+          </div>
+
+          <div class="recommendation">
+            <div class="icon-man"><img src="img/icon-man.png"/></div>
+            <div class="marshalls-beach">
+              Marshall’s Beach
+            </div>
+            <div class="icon-save3"><img src="img/icon-save.png"/></div>
+          </div>
+
+
+          <div class="connections">
+            Connections
+          </div>
+
+          <div class="connection1">
+            <div class="dot-orange-expanded-copy-2">
+              <img src="img/Adam.png"/>
+            </div>
+            <div class="name">Adam M.</div>
+          </div>
+
+          <div class="connection2">
+            <div class="dot-orange-expanded-copy-2">
+              <img src="img/Terry.png"/>
+            </div>
+            <div class="name">Terry S.</div>
+          </div>
+
+          <div class="connection3">
+            <div class="dot-orange-expanded-copy-2">
+              <img src="img/Donna.png"/>
+            </div>
+            <div class="name">Dona W.</div>
+          </div>
+
+          <div class="connection4">
+            <div class="dot-purple-expanded">
+              <img src="img/Gloria.png"/>
+            </div>
+            <div class="name">Gloria S.</div>
+          </div>
+
+          <div class="connection5">
+            <div class="dot-purple-expanded-copy">
+              <div class="view_text">+8</div>
+            </div>
+            <div class="name">View</div>
+          </div>
+
+
+
+          <div class="instagram-feed">
+            Instagram Feed
+          </div>
+          <div style="clear:both"></div>
+        </div>
+
+        <div class="search">
+          <div class="search-for-friends">
+            Search for friends and places
+          </div>
+          <div class="icon-search-grey">
+            <img src="img/icon-search-grey.png"/>
+          </div>
+        </div>
+
+
+        <div class="map">
+          <div id="map"></div>
+
+          <div class="dot-purple">
+            <div class="dot_text">3°</div>
+          </div>
+          <div class="dot-blue">
+            <div class="dot_text">2°</div>
+          </div>
+          <div class="dot-orange">
+            <div class="dot_text">1°</div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsvwkhiMPQC0-OVYZuAH5Ze2PIIaHFngE&callback=initMap" async defer></script>
+</body>
+
+
+<link href="dependencies/sweetalert2/sweetalert2.css" rel="stylesheet" type="text/css">
+<script src="dependencies/sweetalert2/sweetalert2.js"></script>
+<script src="dependencies/jquery/jquery-3.1.1.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</html>
